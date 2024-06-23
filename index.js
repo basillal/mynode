@@ -47,8 +47,9 @@ async function run() {
 // Start the Express server
 app.get("/", async (req, res) => {
   try {
+res.send("Express on Vercel");
     await run();
-    res.send("Express on Vercel");
+    
   } catch (error) {
     console.error(error);
     res.status(500).send("Failed to fetch movie");
