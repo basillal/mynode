@@ -52,7 +52,7 @@ function run() {
 // Start the Express server
 app.get("/", (req, res) => {
   run().then(() => {
-    res.send("Express on Vercel");
+    res.send("Express on Verccccel");
   }).catch((error) => {
     console.error(error);
     res.status(500).send("Failed to fetch movie");
